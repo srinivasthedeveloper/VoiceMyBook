@@ -1,0 +1,24 @@
+# Dependencies
+**/node_modules
+
+# Build output
+frontend/dist
+
+# Runtime artifacts
+backend/uploads/
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+
+# Environment files (copy .env.example → .env.local and fill in values)
+backend/.env
+frontend/.env.local
+
+# Large binaries — voices are downloaded during Docker build
+voices/
+
+# OS / editor
+.DS_Store
+**/*.log
+.vscode/
+.idea/

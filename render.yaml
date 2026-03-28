@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: voicemybook
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter          # upgrade to standard for more RAM if TTS is slow
+    healthCheckPath: /api/voices
+
+    disk:
+      name: voicemybook-data
+      mountPath: /app/data
+      sizeGB: 5
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_PATH
+        value: /app/data/voicemybook.db
+      - key: UPLOAD_DIR
+        value: /app/data/uploads
+      - key: CLEANUP_AFTER_HOURS
+        value: "24"

@@ -1,0 +1,8 @@
+**/node_modules
+**/.git
+**/.DS_Store
+backend/uploads
+backend/voicemybook.db
+backend/.env
+frontend/dist
+**/*.log
