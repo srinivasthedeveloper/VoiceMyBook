@@ -22,3 +22,10 @@ voices/
 **/*.log
 .vscode/
 .idea/
+
+# Local experiments / test data (not part of the app)
+local/
+testing book/
+/package-lock.json
+.claude
+docs

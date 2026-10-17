@@ -83,7 +83,7 @@ Default: **Heart** (`af_heart`).
 | `UPLOAD_DIR` | `./uploads` | PDFs, chunks, audio, previews |
 | `MAX_FILE_SIZE_MB` | `50` | Upload limit |
 | `TTS_CONCURRENCY` | `3` | Parallel TTS workers per job |
-| `TTS_CHUNK_SIZE` | `1000` | Target characters per chunk |
+| `TTS_CHUNK_SIZE` | `400` | Target characters per chunk |
 | `TTS_VOICE` | `af_heart` | Default voice |
 | `CLEANUP_AFTER_HOURS` | `24` | Auto-delete old jobs (`0` = disabled) |
 
