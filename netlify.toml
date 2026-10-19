@@ -5,3 +5,9 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# SPA: serve the app for client routes like /player/<id> on refresh (real files still win)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
