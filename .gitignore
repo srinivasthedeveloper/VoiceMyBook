@@ -29,3 +29,7 @@ testing book/
 /package-lock.json
 .claude
 docs
+
+# Chatterbox engines: local Python env and personal reference clips
+backend/tts-python/.venv/
+backend/voices-ref/
