@@ -85,7 +85,7 @@ Default: **Heart** (`af_heart`).
 | `TTS_CONCURRENCY` | `3` | Parallel TTS workers per job |
 | `TTS_CHUNK_SIZE` | `400` | Target characters per chunk |
 | `TTS_VOICE` | `af_heart` | Default voice |
-| `CLEANUP_AFTER_HOURS` | `24` | Auto-delete old jobs (`0` = disabled) |
+| `CLEANUP_AFTER_HOURS` | `720` (30 days) | Auto-delete old jobs (negative = disabled) |
 
 ## Deployment
 
